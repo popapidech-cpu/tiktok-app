@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><title>Callback</title>
+<h2>Authorization code</h2>
+<p id="c" style="word-break:break-all;font-family:monospace"></p>
+<script>
+  var p = new URLSearchParams(location.search);
+  document.getElementById('c').textContent = p.get('code') || 'No code in URL';
+</script>
